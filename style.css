@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.image-box {
+  display: flex;
+  /* background-color: black; */
+  color: white;
+  margin: 50px;
+}
+
+.hero {
+  position: relative;
+  /* display: flex; */
+  height: 80vh;
+  background: url("Assets/images/bg.jpg") center/cover no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.email-form {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+}
+
+.email-form input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2px 0 0 2px;
+  z-index: 2;
+  color: white;
+  background-color: rgb(41, 37, 37);
+}
+
+.email-form button {
+  padding: 0 1rem;
+  background-color: #ff000d;
+  color: rgb(131, 116, 116);
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+
+}
+
+nav {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  /* to remove blackiness */
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 140px;
+}
+
+.line {
+  height: 11px;
+  background-color: rgb(87, 84, 84);
+}
+
+button {
+  padding: 10px;
+}
+
+button:nth-child(1) {
+  color: #ffffff;
+  background-color: #6e6565;
+  border-radius: 8px;
+}
+
+button:nth-child(2) {
+  color: #ffffff;
+  background-color: #ff000d;
+  border-radius: 8px;
+
+}
+
+
+/* Trending Section CSS */
+
+
+.Trending {
+  padding: 20px 40px;
+  background-color: black;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+ 
+}
+
+.Trending h1 {
+  /* font-size: 1.8rem; */
+  margin-bottom: 15px;
+    
+   
+}
+
+.Trending-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  overflow: hidden;
+}
+
+
+.card {
+  position: relative;
+  flex: 1;
+  max-width: 18%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.rank {
+  position: absolute;
+  bottom: -10px;
+  left: 5px;
+  font-size: 60px;
+  font-weight: bold;
+
+
+  color: rgb(255, 253, 253) ;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+.MoreReasons{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+padding: 20px 40px;
+  background-color: black;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+}
+.mainbox{
+  height: 800px;
+  width: 90%;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "b1 b2",
+    "b3 b4";
+gap: 10px;
+
+}
+.box1 { grid-area: b1; background: red; }
+.box2 { grid-area: b2; background: blue; }
+.box3 { grid-area: b3; background: green; }
+.box4 { grid-area: b4; background: yellow; }
+
+
+
+
+
