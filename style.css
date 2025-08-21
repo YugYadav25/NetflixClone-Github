@@ -183,23 +183,53 @@ padding: 20px 40px;
   font-size: 25px;
 }
 .mainbox{
-  height: 800px;
+  margin: 10px;
+  height: 600px;
   width: 90%;
-  background-color: #ffffff;
+  background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "b1 b2",
+  grid-template-areas: "b1 b2"
     "b3 b4";
 gap: 10px;
 
 }
-.box1 { grid-area: b1; background: red; }
-.box2 { grid-area: b2; background: blue; }
-.box3 { grid-area: b3; background: green; }
-.box4 { grid-area: b4; background: yellow; }
+.box1 { grid-area: b1; background: #1e1324; 
+border-radius: 30px;
+padding: 25px;
+
+}
+h3{
+  font-weight: normal;
+}
+.box2 { grid-area: b2; background: #1e1324;border-radius: 30px;
+padding: 25px; }
+.box3 { grid-area: b3; background: #1e1324;border-radius: 30px;
+padding: 25px; }
+.box4 { grid-area: b4; background: #1e1324;border-radius: 30px;
+padding: 25px; }
+
+.text{
+  margin-top: 20px;
+  color: #6e6565; 
+}
 
 
 
+.faq{
+    background-color: black;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  padding: 20px 40px; 
+}
 
-
+.faq-box{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color:#2d2d2d;
+padding: 25px;
+margin: 20px 0px;
+}
